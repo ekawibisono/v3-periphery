@@ -7,6 +7,7 @@ import 'hardhat-watcher'
 const LOW_OPTIMIZER_COMPILER_SETTINGS = {
   version: '0.7.6',
   settings: {
+    evmVersion: 'istanbul',
     optimizer: {
       enabled: true,
       runs: 2_000,
@@ -20,6 +21,7 @@ const LOW_OPTIMIZER_COMPILER_SETTINGS = {
 const LOWEST_OPTIMIZER_COMPILER_SETTINGS = {
   version: '0.7.6',
   settings: {
+    evmVersion: 'istanbul',
     optimizer: {
       enabled: true,
       runs: 1_000,
@@ -33,6 +35,7 @@ const LOWEST_OPTIMIZER_COMPILER_SETTINGS = {
 const DEFAULT_COMPILER_SETTINGS = {
   version: '0.7.6',
   settings: {
+    evmVersion: 'istanbul',
     optimizer: {
       enabled: true,
       runs: 1_000_000,
@@ -70,7 +73,7 @@ export default {
     onlylayer: {
       url: 'https://onlylayer.org/',
       gas: 1500000,
-    }
+    },
   },
   etherscan: {
     // Your API key for Etherscan
